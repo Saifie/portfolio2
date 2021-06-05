@@ -1,0 +1,48 @@
+
+
+:root{
+	--primary-dark:#23b1ae;
+	--primary-light:#25d6d2;
+	--primary:#36c6c2;
+}
+*,*::before,*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+html{
+	font-size: 62.5%;
+	transition: all 0.4s;
+	background: #e7e3d4;
+	font-family: 'Roboto', sans-serif;
+
+	/*font-family: 'Lato', sans-serif;*/
+	
+}
+
+.footer{
+	font-size: 2rem;
+	color: #666;
+	margin: 2rem auto;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	width: 30rem;
+
+}
+
+.footer span{
+	color: #ee7799;
+	font-size: 2.3rem;
+}
+
+/*FaBars
+ImCross
+FaGithub
+AiFillGoogleCircle
+AiFillHtml5
+DiCss3
+AiFillFacebook*/

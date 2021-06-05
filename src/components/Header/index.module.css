@@ -1,0 +1,203 @@
+.main{
+	display: flex;
+	padding: 3rem 5rem;
+	flex-direction: row;
+	height: 90vh;
+	background-image: linear-gradient(to right bottom, #e7e3d4,#eae7d7);
+	
+	
+	
+
+}
+
+.intro{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	flex-basis: 40%;
+	margin-top: -5rem;
+	margin-left: 5rem;
+	padding: 3rem 0rem;
+
+
+}
+.intro h2{
+	font-size: 38px;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: 3px;
+	padding: 3rem;
+	color: #444;
+
+}
+.intro h3{
+	font-size: 27px;
+	font-weight: lighter;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	padding: 1rem;
+	color: #555;
+
+}
+.intro button{
+	padding: 1rem 2rem;
+	background: #b23850;
+	text-transform: uppercase;
+	color: #eee;
+	font-size: 1.3rem;
+	font-weight: 700;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	margin: 5rem 2rem;
+
+}
+.intro button:hover{
+	
+	background: #ee3850;
+
+	color: #eee;
+	
+
+}
+
+.header{
+	flex: 1;
+	margin-left: auto;
+	padding-left: 10rem;
+
+
+}
+
+.header img{
+	width: 100%;
+	height: 80%;
+
+}
+
+
+@media (max-width: 900px){
+	.main{
+
+		padding: 1rem;
+		flex-direction: row;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		height: 70vh;
+		
+		
+	}
+	.intro{
+		margin-top: 5rem;
+		margin-left: 0rem;
+		flex-basis: 50%;
+	}
+	.intro h2{
+		font-size: 24px;
+	}
+	.intro h3{
+		font-size: 20px;
+	}
+	.header{
+		padding: 3rem;
+		padding-left: 0;
+	}
+	.header img{
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+
+@media (max-width: 600px){
+	.main{
+		flex-direction: column;
+		padding: 5rem 1rem;
+		height: 100vh;
+	}
+	.intro{
+		
+		margin-left: 0rem;
+		flex-basis: 80%;
+	}
+	.intro h2{
+		padding: 1rem;
+		font-size: 20px;
+	}
+	.intro h3{
+		font-size: 17px;
+		padding: 1rem;
+	}
+	
+	.header img{
+		width: 100%;
+		height: 100%;
+		padding: 1rem;
+		text-align: center;
+	}
+
+}
+
+.intro div{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.icony-wrap{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5rem;
+	cursor: pointer;
+	transition: transform .5s;
+}
+.icony-wrap:hover{
+	transform: scale(1.2);
+}
+.icony{
+	font-size: 3rem;
+	color: #fff;
+	
+	border-radius: 50%;
+	
+
+
+
+}
+
+.span-head{
+	animation:rotate 2s linear infinite;
+
+	transform: rotateZ(45deg);
+	color:black;
+	
+
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotateZ(0);
+	}
+	30%{
+		transform: rotateZ(60deg);
+	}
+	50%{
+		transform: rotateZ(0);
+	}
+	80%{
+		transform: rotateZ(-45deg);
+	}
+	100%{
+		transform: rotateZ(0);
+	}
+
+}

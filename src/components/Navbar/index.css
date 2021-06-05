@@ -1,0 +1,189 @@
+.navbar{
+	background-image: linear-gradient(to bottom, #e7e3d4,#e7e3d4);
+	color: #111;
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem 3rem;
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.1;
+	text-align: center;
+	align-items: center;
+	transition: all 0.3s;
+	z-index: 1;
+}
+
+.navbar__logo{
+	flex-basis: 10%;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	cursor: pointer;
+
+}
+
+.navbar__logo span{
+	color: #ee8877;
+}
+
+.navbar__logo a{
+	color: grey;
+	font-size: 3rem;
+	text-decoration: none;
+	font-family: 'Dancing Script', sans-serif;
+
+
+
+}
+
+.navbar.hidden .navbar__list{
+	display: flex;
+	transition: all .6s;
+}
+
+.navbar__list{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	padding-right: 6rem;
+	transition: all 1s;
+
+}
+.navbar__list li:lastchild{
+	margin-right: 1rem;
+}
+.navbar__list li{
+	margin: 1.5rem;
+
+
+
+}
+
+.navbar__list li a{
+	text-decoration: none;
+	color: #222;
+	margin-left:1rem;
+	padding: 1rem 1rem;
+	font-weight: 500;
+
+
+	
+
+
+}
+
+
+.icon{
+		height:40px;
+	width: 40px;
+	color: #111;
+	
+		margin:0.1rem 1rem;
+		
+	
+
+		
+		border-radius: 60%;
+		
+		display:none;
+		transition: all 1s;
+
+
+
+
+		
+
+
+}
+
+@media (max-width: 900px){
+	.navbar.hidden .navbar__list{
+display: none;
+}
+	.icon{
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+	}
+	.navbar{
+		
+		padding: 1.5rem 0.1rem;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.navbar__list{
+	flex-direction: column;
+	flex: 1;
+}
+.navbar__list li a{
+	border-bottom: 1px solid #888;
+}
+.navbar__logo a{
+	font-size: 2rem;
+}
+
+}
+
+@media(max-width: 350px){
+	.navbar__logo a{
+	font-size: 1.5rem;
+}
+
+.navbar__list li a{
+	font-size: 1.5rem;
+}
+
+}
+
+/*.icon div{
+	 width: 2rem;
+            height: 2px;
+            text-align:center;
+            margin: 2px;
+            background-color:#eee;
+
+
+}*/
+
+
+
+
+
+
+.navbar__list li a:hover{
+		animation:  pulsate 1s linear infinite;
+		background: #e7e3d4;
+		color: #333;
+
+}
+
+/*#b23850
+#8590aa*/
+
+
+
+
+
+@keyframes pulsate{
+	0%{
+		box-shadow: 0;
+		transform: scale(1);
+
+	}
+	50%{
+		box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+		transform: scale(1.2);
+
+	}
+	100%{
+		box-shadow: 0;
+		transform: scale(1);
+
+	}
+
+}
